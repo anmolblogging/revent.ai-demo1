@@ -19,6 +19,7 @@ export const navLinks = [
   { href: "#solutions", label: "Solutions" },
   { href: "#case-studies", label: "Case Studies" },
   { href: "#why-us", label: "Why Us" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -169,5 +170,47 @@ export const steps = [
     title: "Refine",
     description:
       "We continuously evolve the software to accommodate changing workflows, new requirements, and business growth.",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "We were running ₹40 Cr in turnover on 18 Excel sheets that kept crashing and corrupting. Revent shadowed our clerks for 3 days and built an MIS so intuitive that our floor team logs daily rolls in Hindi. Dispatch delays dropped to zero.",
+    highlight: "Dispatch delays dropped to zero in month one",
+    author: "Rajesh Singhania",
+    role: "Managing Director",
+    company: "Singhania Textiles",
+    location: "Mumbai, India",
+    industry: "Textile Trading",
+    metric: "4 hrs saved daily on reconciliation",
+    rating: 5,
+    initials: "RS",
+  },
+  {
+    quote:
+      "Our manufacturing plant had blind spots in raw material formulation and compliance logs for audits. Revent automated recipes and truck weight receipts right at the weighbridge. Our inventory reconciliation is now real-time instead of month-end.",
+    highlight: "Real-time inventory instead of month-end guesswork",
+    author: "Abdoulaye Diallo",
+    role: "VP of Plant Operations",
+    company: "West Coast Cement Co.",
+    location: "Dakar, Senegal",
+    industry: "Manufacturing",
+    metric: "100% audit-ready compliance logs",
+    rating: 5,
+    initials: "AD",
+  },
+  {
+    quote:
+      "Tracking 200+ container bookings across shipping lines used to take three dedicated coordinators sending WhatsApp updates. Revent built us a unified container tracking and customs documentation dashboard. Clearance is two days faster.",
+    highlight: "Turnaround is 2 days faster across all shipments",
+    author: "Farhan Al-Mansoori",
+    role: "Head of Logistics",
+    company: "Apex Maritime Cargo",
+    location: "Dubai, UAE",
+    industry: "EXIM & Logistics",
+    metric: "2 days faster customs clearance",
+    rating: 5,
+    initials: "FA",
   },
 ];

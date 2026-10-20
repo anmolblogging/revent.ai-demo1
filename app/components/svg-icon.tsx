@@ -3,6 +3,10 @@ const paths = {
   shapes:
     "M9.500 15a5.500 5.500 0 1 1 5.300-7M14.500 20.500a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z",
   chevron: "m6 9 6 6 6-6",
+  chevronLeft: "m15 18-6-6 6-6",
+  chevronRight: "m9 18 6-6-6-6",
+  quote:
+    "M3 21c3 0 7-1 7-8V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h3c0 3.3-2 5-4 5v3zm14 0c3 0 7-1 7-8V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h3c0 3.3-2 5-4 5v3z",
   menu: "M4 7h16M4 12h16M4 17h16",
   close: "M6 6l12 12M18 6 6 18",
 } as const;
@@ -12,16 +16,18 @@ export type IconName = keyof typeof paths;
 export function Icon({
   name,
   className = "size-5",
+  strokeWidth = 2,
 }: {
   name: IconName;
   className?: string;
+  strokeWidth?: number;
 }) {
   return (
     <svg
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={1.6}
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
